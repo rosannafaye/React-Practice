@@ -7,7 +7,7 @@ export default function Navbar () {
       <img src= '/src/assets/reactlogo.png' />
         <h1>ReactFacts</h1>
       </header>
-        <h3>React Course Project-1</h3>
+        <h3>React Course - Project 1</h3>
 
     </nav>
 
