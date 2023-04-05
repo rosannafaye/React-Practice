@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
 }
 
 body {
@@ -14,6 +15,7 @@ nav {
   height: 91px;
   align-items: center;
   justify-content: space-between;
+  box-shadow: #21222A 0px 8px 24px;
 }
 
 header {
@@ -33,4 +35,47 @@ header > h1 {
 nav > h3 {
   color: white;
   padding-right: 24px;
+}
+
+
+main {
+  height: 100vh;
+  background-color: #282D35;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+
+main > h1 {
+  margin: 0;
+  padding-top: 24px;
+  color: white;
+
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #61DAFB; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 2em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+main > ul {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+main > ul > li {
+  padding: 12px;
 }
